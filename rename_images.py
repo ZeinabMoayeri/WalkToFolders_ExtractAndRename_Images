@@ -2,15 +2,15 @@ import os
 import shutil
 import csv
 
-source_folder = "/Users/zeinab/Downloads/0-1836"  # Specify the path to the folder containing the subfolders
-destination_folder = "/Users/zeinab/Downloads/all_images"  # Specify the path to the destination folder
-csv_file = "/Users/zeinab/Downloads/0.csv"  # Specify the path to the CSV file
+source_folder = "/path/to/source/folder"  # Specify the path to the folder containing the subfolders
+destination_folder = "/path/to/destination/folder"  # Specify the path to the destination folder
+csv_file = "/path/to/output.csv"  # Specify the path to the CSV file
 
 with open(csv_file, 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Folder", "Image Names"])
 
-    for folder_num in range(1837):
+    for folder_num in range(100):    #for example you have 100 folders
         folder_path = os.path.join(source_folder, str(folder_num))
         if not os.path.isdir(folder_path):
             continue  # Skip if the folder doesn't exist
