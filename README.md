@@ -1,6 +1,8 @@
 # WalkToFolders_ExtractAndRename_Images
 you need 3 libraries os, shutil and csv.
 
+open the Terminal and sfter Upgrade, paste these:
+
 pip install os-sys
 
 pip install pytest-shutil
